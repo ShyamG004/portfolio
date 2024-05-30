@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shyamstyle.css">
+    <title>PortFolio</title>
+
+    <!-- typed.js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- scroll to top button -->
+    <button class="scrollbtn" id="btn" type="button" onclick="scrolltoTop()"><i class="fa fa-arrow-up"></i></button>
+
+    <!-- navbar code start here -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#home">PortFolio</a>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="#home" onclick="menu()">Home</a></li>
+            <li><a href="#about" onclick="menu()">About</a></li>
+            <!--<li><a href="#services" onclick="menu()">Technical Skills</a></li>-->
+            <li><a href="#certificates" onclick="menu()">Certificates</a></li>
+            <li><a href="#contact" onclick="menu()">Contact</a></li>
+        </ul>
+        <div class="menu-btn" onclick="menu()"><i class="fa fa-bars"></i></div>
+    </nav>
+
+    <!-- home section start here -->
+    <div class="home" id="home">
+        <div class="home-content">
+            <h1 class="name">I am Shyam</h1>
+            <p><span class="typing"></span></p>
+        </div>
+    </div>
+
+    <!-- about section start here -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="info">
+                    <div class="personal">
+                        <div class="photo">
+                            <img src="shyamphoto.jpeg" width="150px" height="210px">
+                        </div>
+                        <div class="name">
+                            <p><span>Name:</span> Shyam Shunmugam G</p>
+                            <p><span>Profile:</span>Software Engineer</p>
+                            <p><span>Email:</span> shyamshunmugamg@gmail.com</p>
+                            <p><span>Phone:</span> 7639261004</p>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h4>Skills</h4>
+                        <div class="skill">
+                            <span>HTML</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-line"><span class="html"></span></div>
+                        <div class="skill">
+                            <span>CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-line"><span class="css"></span></div>
+                        <!--<div class="skill">
+                            <span>JavaScript</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="progress-line"><span class="javascript"></span></div>
+                        <div class="skill">
+                            <span>Java</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="progress-line"><span class="php"></span></div>-->
+                    </div>
+                </div>
+                <div class="aboutme">
+                    <h5>About me</h5>
+                    <p>Second year Engineering Student who is passionate about coding</p>
+                    <p>Proficient in programming languages like Java, Python, and C++, with a strong foundation in data structures and algorithms.</p>
+                    <p>Continuously expanding knowledge through coursework and personal projects, with a focus on areas such as machine learning,Artificial Intelligence and web development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start here -->
+    <!--<section class="services" id="services">
+        <div class="container">
+            <h3 class="title">Skills</h3>
+            <div class="line"></div>
+            <div class="services-content">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="icon"><i class="fa fa-code"></i></div>
+                        <div class="card-title">Web Development</div>
+                        <p>Proficient in HTML, CSS, JavaScript, and frameworks such as React.js, with experience in responsive design and cross-browser compatibility.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="icon"><i class="fa fa-laptop"></i></div>
+                        <div class="card-title"></div>
+                        <p>Proficient in Solidity for blockchain development, with hands-on experience in smart contract design and deployment.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="icon"><i class="fa fa-wordpress"></i></div>
+                        <div class="card-title">AI/ML</div>
+                        <p> Proficient in machine learning techniques and generative AI techniques showcased through projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- portfolio section start here -->
+    <!--<section class="portfolio" id="portfolio">
+        <div class="container">
+            <h3 class="title">Projects</h3>
+            <div class="line"></div>
+            <div class="portfolio-content">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="https://clipart-library.com/img1/953348.jpg" alt="okay">
+                        </div>
+                        <div class="info">
+                            <h3>Club Management System</h3>
+                            <p><span class="category">Full Stack Development</span> / Using JSP & Servlet</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="https://i.ibb.co/7nCx6v2/showcontacts-1.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Contacts Management System</h3>
+                            <p><span class="category">GUI Design</span> / Using Java Swing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="https://miro.medium.com/v2/resize:fit:1179/1*VBpWmRgn-33kcLf-NzIOsQ.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Snake Game</h3>
+                            <p><span class="category">Game Development</span> / Using Pychamp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img/https://notionthings.com/wp-content/uploads/2022/01/info.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>BMI calculator</h3>
+                            <p><span class="category">GUI Design</span> / Using Python Tkinter</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="https://i.ytimg.com/vi/Lzp0T6PObfg/maxresdefault.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Discharge Report Summarizer</h3>
+                            <p><span class="category">GEN AI</span> / Ongoing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="photo">
+                            <img src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/001/492/668/datas/original.png" alt="">
+                        </div>
+                        <div class="info">
+                            <h3>Disease Prediction Website</h3>
+                            <p><span class="category">Full Stack + Machine Learning</span> / Ongoing</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>-->
+
+    
+
+    
+    <section id="certificates">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+          <div class="gallery">
+              <img src="cloudcomputing.jpeg" alt="image1">
+              <img src="iiot.jpeg" alt="image1">
+              <img src="iot.jpeg" alt="image1">
+              <img src="Blind Coding.jpg" alt="image1">
+             
+  
+          </div>
+          <div class="gallery">
+            <img src="Great Learning Python for Data Science.jpg" alt="image1">
+            <img src="Scaler DBMS.jpg" alt="image1">
+            <img src="infosys.jpeg" alt="image1">
+        </div>
+        </div>
+  
+      </section>
+      <!-- contact section start here -->
+    <section class="contact" id="contact">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="contact-content">
+                <div class="message">
+                    <form>
+                        <h3 class="heading">Send Message us</h3>
+                        <div class="line"></div>
+                        <div class="field">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="field">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="field">
+                            <textarea cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="gettouch">
+                    <h3 class="heading">Get in Touch</h3>
+                    <div class="line"></div>
+                    <p>Have a question or want to collaborate on a project? Feel free to reach out! We're always eager to connect with fellow engineering enthusiasts. </p>
+                    <div class="info"><i class="fa fa-map-marker"></i>81/9G,Muthukrishnapuram 6th Street,Tuticorin,TamilNadu,India</div>
+                    <div class="info"><i class="fa fa-phone"></i>7639261004</div>
+                    <div class="info"><i class="fa fa-envelope"></i>shyamshunmugamg@gmail.com</div>
+                    <div class="social">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <script src="shyammain.js"></script>
+</body>
+</html>
